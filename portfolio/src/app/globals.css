@@ -2,27 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 100dvh;
+}
+
+/* Color themes */
+
 :root {
-  --background-primary: #a4a4a4;
+  --background-primary: #cecece;
+  --background-2: #d8e2dcff; /*platinum*/
+  --background-3: #aac4cf;
   --accent-primary: #477893;
   --accent-secondary: #58cbee;
   --background-image: url('/defaultBG.jpg');
 }
 
-html {
-  height: 100dvh;
-}
-
 .dark {
-  --background-primary: #FAE7EC;
-  --accent-primary: #f79daf;
-  --accent-secondary: #9e5eff;
+  --background-primary: #ffcad4ff; /*pink*/
+  --background-2: #d8e2dcff; /*platinum*/
+  --background-3: #ffe5d9ff; /*champagne-pink*/
+  --accent-primary: rgb(250, 147, 163); /*cherry-blossom-pink*/
+  --accent-secondary: #E0B1CB; /*mountbatten-pink*/
   --background-image: url('/pinkBG.png');
 }
 
-body {
-  position: relative;
-}
+/* Background and images */
 
 .defaultBG, .pinkBG {
   position: absolute;
@@ -33,9 +37,9 @@ body {
 
 .defaultIMG, .pinkIMG {
   position: absolute;
+  transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
-  transition: transform 0.5s ease-in-out;
 }
 
 .dark .defaultBG {
@@ -74,6 +78,8 @@ body {
   transform: rotateY(-180deg);
 }
 
+/* Gradient text */
+
 .gradient-text {
   background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
   background-clip: text;
@@ -105,4 +111,5 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+/* Custom table styling */
 

@@ -10,7 +10,10 @@ export default {
     extend: {
       colors: {
         primaryBG: 'var(--background-primary)',
-        primaryAccent: 'var(--accent-primary)'
+        BG2: 'var(--background-2)',
+        BG3: 'var(--background-3)',
+        primaryAccent: 'var(--accent-primary)',
+        secondaryAccent: 'var(--accent-secondary)',
       },
       backgroundImage: {
         'custom-img': "var(--background-image)",
