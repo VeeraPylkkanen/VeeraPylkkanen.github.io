@@ -24,7 +24,7 @@ export default function RootLayout({
         <img className="defaultBG z-[-1]" src="/defaultBG.jpg" />
         <img className="pinkBG z-[-1]" src="/pinkBG.png" />
 
-        <div className="h-[98%] sm:h-[95%] max-w-screen-xl w-full sm:w-11/12 bg-white sm:rounded sm:dark:rounded-2xl flex flex-col lg:flex-row p-2 lg:p-4">
+        <div className="h-full sm:h-[95%] max-w-screen-xl w-full sm:w-11/12 bg-white sm:rounded sm:dark:rounded-2xl flex flex-col lg:flex-row p-2 lg:p-4">
 
           <nav className="mb-2 lg:mb-0 bg-primaryBG lg:min-w-[200px] lg:max-w-[200px] lg:overflow-y-scroll no-scrollbar shadow-md dark:shadow-none p-4 rounded dark:rounded-2xl flex flex-row lg:flex-col transition-colors duration-500">
             <h2 className="hidden lg:block font-bold text-l my-4 text-center">Navigation</h2>
@@ -45,7 +45,7 @@ export default function RootLayout({
             </ul>
           </nav>
 
-          <main className="grow overflow-y-scroll no-scrollbar">{children}</main>
+          <main className="grow overflow-y-scroll">{children}</main>
 
         </div>
       </body>
